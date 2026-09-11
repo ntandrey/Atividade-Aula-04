@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro de Receitas Rápidas</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="doces.html">Doces</a></li>
+        <li><a href="salgados.html">Salgados</a></li>
+        <li><a href="bebidas.html">Bebidas</a></li>
+        <li><a href="dicas.html">Dicas</a></li>
+        <li><a href="enviar_receita.html">Enviar receita</a> - você está aqui</li>
+    </ul>
+    <hr>
+
+    <center>
+        <h1>📝 Enviar receita 📝</h1>
+    </center>
+    <hr>
+    <br><br><br><br><br>
+
+    <form>
+
+        <table border="5" align="center" cellpadding="20" width="700" height="600">
+            <tr>
+                <td align="center">
+                    <label for="caixanome"><b>Seu nome:</b></label>
+                </td>
+                <td align="center">
+                    <input type="text" id="caixanome" name="nome" placeholder="Digite seu nome">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="caixaemail"><b>Seu E-mail:</b></label>
+                </td>
+                <td align="center">
+
+                    <input type="email" id="caixaemail" name="email" placeholder="Digite seu email">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="caixareceita"><b>Nome da receita:</b></label>
+
+                </td>
+                <td align="center">
+
+                    <input type="text" name="nomereceita" id="caixareceita" placeholder="Nome da receita">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="cat"><b>Categoria:</b></label>
+                </td>
+                <td align="center">
+
+                    <select name="categoria" id="cat">
+                        <option value="doce">Doce</option>
+                        <option value="salgado">Salgado</option>
+                        <option value="bebida">Bebida</option>
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="preparo"><b>Modo de preparo:</b></label>
+                </td>
+                <td align="center">
+                    <textarea name="modopreparo" id="preparo" placeholder="Explique o modo de preparar" rows="2"
+                        cols="25"></textarea>
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td>
+                    <label for="foto"><b>Foto do prato (opcional):</b></label>
+                </td>
+                <td align="center">
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Enviar</button>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
